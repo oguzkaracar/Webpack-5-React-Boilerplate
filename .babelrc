@@ -1,0 +1,27 @@
+{
+  // -- Webpack' de kullandığımız babel loader'ın ayarlamalarını bu dosyada ayrı olarak yapabiliriz...
+
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "last 2 Chrome versions",
+            "last 2 Firefox versions",
+            "last 2 Safari versions",
+            "last 2 iOS versions",
+            "last 1 Android version",
+            "last 1 ChromeAndroid version",
+            "ie 11"
+          ]
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ]
+
+  // // preset env modern js yi tüm ve eski js'ê çevirir..
+  // preset-react ise babel'ın react(jsx) 'i tarayıcıların anlayacağı şeylere bakar..
+}
