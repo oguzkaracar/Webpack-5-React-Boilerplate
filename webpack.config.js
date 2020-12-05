@@ -47,13 +47,20 @@ let config = {
           {
             loader: 'file-loader',
             options: {
-              name: 'images/[name].[ext]',
+              name: 'assets/[name].[ext]',
             },
           },
         ],
       },
     ],
   },
+  // optimization: {
+  //   splitChunks: {
+  //     // include all types of chunks
+  //     chunks: 'all',
+  //   },
+  // },
+  // optimizasyonda sıkıntı var BAK!!!
 };
 
 // for production purposes - needs to change or upgrade.
